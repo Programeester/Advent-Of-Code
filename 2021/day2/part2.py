@@ -13,6 +13,6 @@ for dir, val in data:
         aim += val
     if dir == "forward":
         height += val
-        depth += height * aim
+        depth += val * aim
         
 print(height * depth)

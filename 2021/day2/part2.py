@@ -2,7 +2,7 @@ with open("data.txt", "r") as f:
     data = f.readlines()
     data = [(i.split()[0], int(i.split()[1])) for i in data]
 
-height = 0
+horizontal = 0
 depth = 0
 aim = 0
 
@@ -12,7 +12,7 @@ for dir, val in data:
     if dir == "down":
         aim += val
     if dir == "forward":
-        height += val
+        horizontal += val
         depth += val * aim
         
 print(height * depth)

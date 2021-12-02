@@ -15,4 +15,4 @@ for dir, val in data:
         horizontal += val
         depth += val * aim
         
-print(height * depth)
+print(horizontal * depth)

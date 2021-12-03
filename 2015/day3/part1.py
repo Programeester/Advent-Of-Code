@@ -1,6 +1,6 @@
-houses = {(0,0) : 1}
-santa = {"x" : 0, "y" : 0}
-with open("data.txt", "r") as f:
+houses = {(0, 0): 1}
+santa = {"x": 0, "y": 0}
+with open("inp1.txt", "r") as f:
     data = f.read()
     for command in data:
         if command == "v":
@@ -10,11 +10,11 @@ with open("data.txt", "r") as f:
         if command == "<":
             santa["x"] -= 1
         if command == ">":
-            santa["y"] += 1
-        
+            santa["x"] += 1
+
         try:
             houses[(santa["x"], santa["y"])] += 1
         except:
             houses[(santa["x"], santa["y"])] = 1
-            
-print(len(houses.keys()))
+
+print(len(houses.keys())) 

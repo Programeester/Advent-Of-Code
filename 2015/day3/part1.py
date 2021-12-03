@@ -1,6 +1,6 @@
 houses = {(0, 0): 1}
 santa = {"x": 0, "y": 0}
-with open("inp1.txt", "r") as f:
+with open("data.txt", "r") as f:
     data = f.read()
     for command in data:
         if command == "v":
